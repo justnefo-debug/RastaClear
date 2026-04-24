@@ -7,7 +7,6 @@
     "icon": "./assets/icon.png",
     "scheme": "rastaclearapp",
     "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
     "ios": {
       "supportsTablet": true
     },
@@ -16,8 +15,12 @@
         "backgroundColor": "#121212",
         "foregroundImage": "./assets/icon.png"
       },
-      "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "FOREGROUND_SERVICE"
+      ],
+      "package": "com.monarch_apex.rastaclearapp"
     },
     "web": {
       "output": "static",
@@ -33,11 +36,23 @@
           "resizeMode": "contain",
           "backgroundColor": "#000000"
         }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysPermission": "Allow Rasta Clear to detect police checkpoints even when the app is in the background."
+        }
       ]
     ],
     "experiments": {
       "typedRoutes": true,
-      "reactCompiler": true
+      "baseUrl": "/"
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "b93c84e4-4407-4713-a32e-fc7b45350dc3"
+      }
     }
   }
 }
