@@ -1,7 +1,7 @@
 name: Build Optimized APK
 on:
   workflow_dispatch:
-    # This adds a manual "Run" button on GitHub
+    # This adds the manual "Run" button on GitHub
 
 jobs:
   build:
@@ -25,6 +25,10 @@ jobs:
       - name: 📦 Install Dependencies
         run: npm install
 
+      - name: 🔐 Create .env file
+        run: |
+          echo "${{ secrets.ENV_FILE }}" > .env
+
       - name: 🏗️ Create Android Native Code
         run: npx expo prebuild --platform android --clean
 
@@ -37,5 +41,5 @@ jobs:
       - name: 📤 Upload Finished APK
         uses: actions/upload-artifact@v4
         with:
-          name: RastaClear-App
+          name: RastaClear-Optimized-APK
           path: android/app/build/outputs/apk/release/app-release-unsigned.apk
