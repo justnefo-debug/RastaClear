@@ -17,8 +17,9 @@
 
 ## 📸 Screenshots
 
-![Home Screen Placeholder](https://via.placeholder.com/300x600?text=Home+Screen)
-![Proximity Alert Placeholder](https://via.placeholder.com/300x600?text=Proximity+Alert)
+| Loading Splash | Auth Screen | Live Map & Alert |
+| :---: | :---: | :---: |
+| ![Splash](assets/screenshots/splash.jpeg) | ![Login](assets/screenshots/login.jpeg) | ![Map](assets/screenshots/map.jpeg) |
 
 ---
 
