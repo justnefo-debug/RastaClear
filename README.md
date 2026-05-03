@@ -73,7 +73,7 @@
 ## 📲 Download the APK
 
 Want to try it out on your Android device right away? 
-**[Download the latest APK here](#)** *(Link coming soon)*
+**[Download the latest APK here](https://github.com/justnefo-debug/RastaClear/releases/download/v1.0.0/app-release.apk)**
 
 ---
 
